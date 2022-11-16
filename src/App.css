@@ -1,38 +1,61 @@
-.App {
+body {
+  background: #fff;
+}
+
+.container {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.select-style {
+  border: 1px solid #ccc;
+  width: 200px;
+  border-radius: 3px;
+  overflow: hidden;
+  font-size: 20px;
+  background: #fafafa  no-repeat 90% 50%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.select-style select {
+  padding: 5px 8px;
+  width: 130%;
+  font-size: 20px;
+  border: none;
+  box-shadow: none;
+  background: rgb(173, 192, 243);
+  background-image: none;
+  -webkit-appearance: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.select-style select:focus {
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.select-style option{
+  font-size: 20px;
+}
+
+.customers {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.customers td, .customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.customers tr:nth-child(even){background-color: #f2f2f2;}
+
+.customers tr:hover {background-color: #ddd;}
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #213455;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
